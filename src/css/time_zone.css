@@ -1,0 +1,23 @@
+.tz {
+    position: relative;
+    width: 120px;
+    display: inline-block;
+    height: 200px;
+    margin-top: 20px;
+    overflow-y: hidden;
+    background-color: ghostwhite;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.time, .zone, .desc {
+    margin-top: 5px;
+}
+
+.rw {
+    text-align: center;
+}
+
+.desc {
+    word-wrap: break-word;
+}

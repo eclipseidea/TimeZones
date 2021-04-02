@@ -1,28 +1,42 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <section id="app">
+        <Header/>
+        <div class="content">
+            <modal v-if="modal_active"/>
+            <time-zone v-for="(time) in time_zones"
+                       :class="[{disable:modal_active}]"
+                       :key="time.id"
+                       :item="time"/>
+        </div>
+    </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import TimeZone from './components/TimeZone.vue'
+    import Header from "@/components/Header"
+    import Modal from "@/components/Modal"
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    import {mapGetters} from "vuex"
+
+    export default {
+        name: 'App',
+
+        components: {
+            Modal,
+            Header,
+            TimeZone,
+        },
+
+        computed: {
+            ...mapGetters([
+                "modal_active",
+                "time_zones",
+            ]),
+        },
+
+    }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="../src/css/app.css"/>
+
+

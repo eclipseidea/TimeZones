@@ -1,0 +1,107 @@
+.crt-win-mod {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    border: 2px gray solid;
+    background-color: ghostwhite;
+    z-index: 99999999999;
+}
+
+.crt-win {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.ddm, .inp {
+    margin-left: 20px;
+    border: 1px solid black;
+    margin-top: 30px;
+    padding: 0;
+    height: 20px;
+}
+
+.ddm {
+    width: 300px;
+}
+
+.inp {
+    resize: none;
+    width: 298px;
+    height: 70px;
+}
+
+.crt-b {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.butt-cont {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    justify-items: auto;
+    width: 100%;
+}
+
+.crt-bu, .crt-bd {
+    position: relative;
+    margin-bottom: 0;
+    width: 100px;
+    height: 20px;
+}
+
+.crt-bd {
+    background: #ff8000;
+    margin-bottom: 20px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.text {
+    position: relative;
+    left: 20px;
+    top: 25px
+}
+
+.reg{
+    margin: 0 20px;
+    padding: 0;
+    color: orangered;
+}
