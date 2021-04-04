@@ -42,7 +42,7 @@
 
                 const time = new Date()
 
-                time.setHours(time.getHours()+ this.item.time_marker)
+                time.setHours(time.getUTCHours()+ this.item.time_marker)
 
                 if (time.getHours() >= 0 && time.getHours() <= 9) {
                     hours = '0' + time.getHours()

@@ -98,10 +98,11 @@
         },
 
         computed: {
+
             ...mapGetters([
                 "modal_window_value",
                 "active_model",
-                "time_zone_list"
+                "time_zone_list",
             ]),
 
             modal_window_action_create() {

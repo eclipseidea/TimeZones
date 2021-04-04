@@ -4,7 +4,7 @@ export const time_zone_values = {
             time_zone_list: [
                 {
                     city: "Vienna/Austria",
-                    time: +1
+                    time: +2
                 },
 
                 {
